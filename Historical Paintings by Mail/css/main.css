@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Lexio';
+    src: url('../bahan/LEIXO-DEMO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Alice';
+    src: url('../bahan/Alice-Regular.ttf') format('truetype');
+}
+
+body{
+    background-image: url("../bahan/BG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+#menu {
+    z-index: 3;
+    position: fixed;
+    margin-top: 25px;
+    left: 25px;
+    width: 50px;
+    cursor: pointer;
+    transition: margin-left .5s;
+}
+
+#pict {
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    width: 635px;
+}
+
+#footer {
+    position: absolute;
+    margin-top: 600px;
+    left: 0px;
+    width: 900px;
+}
+
+#judul {
+    position: absolute;
+    font-family: 'Lexio';
+    color: black;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke-color: white;
+    text-align: right;
+    font-size: 30pt;
+    left: 100px;
+    margin-top: 45px;
+}
+
+#subjudul {
+    position: absolute;
+    font-family: 'Alice';
+    color: white;
+    font-size: 16pt;
+    left: 100px;
+    margin-top: 100px;
+}
+
+#satu {
+    position: absolute;
+    font-family: 'Alice';
+    color: white;
+    font-size: 18pt;
+    left: 100px;
+    margin-top: 345px;
+}
+
+#dua {
+    position: absolute;
+    font-family: 'Alice';
+    color: white;
+    font-size: 18pt;
+    left: 100px;
+    margin-top: 394px;
+}
+
+#tiga {
+    position: absolute;
+    font-family: 'Alice';
+    color: white;
+    font-size: 18pt;
+    left: 100px;
+    margin-top: 443px;
+}
+
+#empat {
+    position: absolute;
+    font-family: 'Alice';
+    color: white;
+    font-size: 18pt;
+    left: 100px;
+    margin-top: 492px;
+}
+
+#lima {
+    position: absolute;
+    font-family: 'Alice';
+    color: white;
+    font-size: 18pt;
+    left: 100px;
+    margin-top: 541px;
+}
+
+a:hover {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke-color: white;
+    font-style: italic;
+}
+
+#teksfoot {
+    z-index: 3;
+    position: absolute;
+    font-family: 'Alice';
+    color: black;
+    font-size: 12pt;
+    left: 100px;
+    margin-top: 650px;
+}
+
+.sidebar-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 25px 0px;
+    background-color: rgb(140, 140, 140);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidebar-menu h2{
+    color: white;
+    line-height: 20px;
+    font-size: 28pt;
+    padding-left: 20px;
+}
+.sidebar-menu h3{
+    color: white;
+    line-height: 10px;
+    font-size: 20pt;
+    padding-left: 40px;
+}
+.sidebar-menu p{
+    color: white;
+    line-height: 5px;
+    font-size: 16pt;
+    padding-left: 60px;
+}
+.close{
+    color: black;
+    cursor: pointer;
+    text-decoration: unset;
+}
+.close:hover {
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
