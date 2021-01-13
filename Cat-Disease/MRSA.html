@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="print">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ffdef488d1.js" crossorigin="anonymous"></script>
+    <script>
+      function copyTextToClipboard(text) {
+        var textArea = document.createElement("textarea");
+        textArea.style.position = 'fixed';
+        textArea.style.top = 0;
+        textArea.style.left = 0;
+        textArea.style.width = '2em';
+        textArea.style.height = '2em';
+        textArea.style.padding = 0;
+        textArea.style.border = 'none';
+        textArea.style.outline = 'none';
+        textArea.style.boxShadow = 'none';
+        textArea.style.background = 'transparent';
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+          var successful = document.execCommand('copy');
+          var msg = successful ? 'successful' : 'unsuccessful';
+          console.log('Copying text command was ' + msg);
+        } catch (err) {
+          console.log('Oops, unable to copy');
+        }
+
+        document.body.removeChild(textArea);
+      }
+
+      function CopyLink() {
+        copyTextToClipboard(location.href);
+        alert("Link coppied to the clipboard!")
+      }
+    </script>
+
+    <title>CAT DISEASE</title>
+  </head>
+  <body style="background-image: url(./bahan/bg.png); background-size: cover;">
+    <div class="row">
+        <div class="col-md-3">
+            <div><img src="./bahan/bg-kucing.png" alt="" style="width: 20%; position: fixed; bottom: 1px; z-index: -1;"></div>
+        </div>
+        <div class="col-md-6" >
+            <div class="iseng mt-2 text-center" style="background-color: black; height: 80px; color: white; border-radius: 15px;">
+              <h1 class="font" style="padding-top: 10px;">Cat-Disease?</h1>
+            </div>
+            <div class="card mt-3 mb-3" style="width: 100%; border-radius: 15px;">
+                <div class="card-body">
+                  <h5 class="card-title">Your cat has</h5>
+                  <h3 class="card-title">MRSA Disease</h3>
+                  <i class="card-text">Methicillin-Resistant Staphylococcus Aureus (Bacteria)</i>
+                  <p class="card-text" style="text-align: justify; padding-top: 10px;">This disease refers to a group of Gram-positive bacteria 
+                    that are genetically distinct from other strains of Staphylococcus aureus. 
+                    MRSA can cause a wide variety of infections, including skin infections, 
+                    pneumonia (infection of the lungs), and other problems. Staph bacteria 
+                    are usually harmless, but they can cause serious infections that can lead to 
+                    sepsis or death. MRSA from cats can infect humans, so it's best to leave your 
+                    cat to the vet to prevent transmission of the disease.</p>
+                  <img src="./bahan/MRSA.png" alt="MRSA" style="float: right; width: 40%;">
+                  <h5 class="card-title" style="padding-top: 200px;">For more information you can visit:</h5>
+                  <a href="https://www.cdc.gov/mrsa/index.html">CDC-MRSA</a><br>
+                  <a href="https://www.cdc.gov/healthypets/pets/cats.html">Centers of Disease Control and Prevention-Cats</a>
+                </div>
+            </div>
+            <div>
+              <a class="btn btn-success" style="float: right; border-radius: 10px;" onclick="CopyLink()">
+                <i class="fas fa-link" style="padding-right: 10px; padding-left: 10px;"></i>
+              </a>
+              <a class="btn btn-secondary" style="float: right; margin-right: 10px; border-radius: 10px;" onclick="window.print(); return false;">
+                <i class="fas fa-print" style="padding-right: 10px; padding-left: 10px;"></i>
+              </a>
+              <a href="./index.html" class="btn btn-primary" style="float: right; margin-right: 10px; border-radius: 10px;">
+                <i class="fas fa-home" style="padding-right: 10px; padding-left: 10px;"></i>
+              </a>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <footer>
+        <div class="container text-center mt-3 mb-2">
+            <small>Copyright &copy; 2021 - Cat-Disease? by Aris, Haiqal, Hasan, Isma’il & Nabila, All Right Reserved. </small>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
