@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Digital Bookshelf Apps Isma'il</title>
+        <link rel="icon" href="pict/Logo-Bookshelf-Apps.svg" type="x-icon" class="icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img class="logo" src="pict/Logo-Bookshelf-Apps.svg">
+                <h1 class="main-title">Digital Bookshelf Apps</h1>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <h3 class="title-content">Your Book Collection</h3>
+                <div id="unfinished-book" class="card1">
+                    <h4 class="sub-content">Unfinished Reading</h4>
+                    <div id="unfinished-list" class="book-list">
+
+                        <!-- <article class="book">
+                            <div class="text-book">
+                                <h3 class="title-book">Book Title Here</h3>
+                                <h4 class="author-book">Author: Ismail</h4>
+                                <p class="year-book">Year of Publication: 2000</p>
+                            </div>
+                            <button class="unfinish">Unfinished Reading</button>
+                            <button class="delete">Delete Book</button>
+                        </article> -->
+
+                    </div>
+                </div>
+
+                <div id="finished-book" class="card1">
+                    <h4 class="sub-content">Finished Reading</h4>
+                    <div id="finished-list" class="book-list">
+                        
+                        <!-- <article class="book">
+                            <div class="text-book">
+                                <h3 class="title-book">Book Title Here</h3>
+                                <h4 class="author-book">Author: Ismail</h4>
+                                <p class="year-book">Year of Publication: 2000</p>
+                            </div>
+                            <button class="unfinish">Unfinished Reading</button>
+                            <button class="delete">Delete Book</button>
+                        </article> -->
+
+                    </div>
+                </div>
+
+            </div>
+            
+            <aside>
+                <h3 class="title-search">Search Book</h3>
+                <div id="search" class="card2">
+                    <form id="search-book">
+                        <label for="search-title" class="label-input">By Title</label>
+                        <input id="search-title" type="text" class="input-text">
+                    </form>
+                </div>
+
+                <h3 class="title-add">Add New Book</h3>
+                <div id="add-book" class="card2">
+                    <form id="input-book">
+                        <label for="input-title" class="label-input">Title</label>
+                        <input id="input-title" type="text" class="input-text" required>
+                        <label for="input-author" class="label-input">Author</label>
+                        <input id="input-author" type="text" class="input-text" required>
+                        <label for="input-years" class="label-input">Year of Publication</label>
+                        <input id="input-years" type="number" class="input-text" required>
+                        <label for="input-finish" class="label-input">Finished Reading</label>
+                        <input id="input-finish" type="checkbox" class="input-check">
+                        <button id="add-book" type="submit" value="Submit" name="Submit" class="button-add">Add to Collection</button>
+                    </form>
+                </div>
+
+                <h3 class="title-profile">Profile</h3>
+                <article class="card3">
+                    <div class="profile-img"></div>
+                    <a href="https://www.dicoding.com/users/ismxday" class="username-profile">@ismxday</a>
+                    <h4 class="name-profile">Isma'il Muhammad Falih</h4>
+                    <p class="job-profile">Informatics '18 UPNVJ</p>
+                    <p class="quote-profile">“We'll taking to the moon. If you cover the eyes of the moon, the eclipse will begin, the eyes of the 12 might cover you up.”</p>
+                    <div id="social-profile">
+                        <a href="https://www.instagram.com/yeomxozary/"><img src="pict/social-ig.svg" class="social-icon" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCps0lrPrsJr9FUQZIT8lLsA"><img src="pict/social-yt.svg" class="social-icon" alt="Youtube"></a>
+                        <a href="#tdk-pny-twt"><img src="pict/social-twt.svg" class="social-icon" alt="Twitter"></a>
+                    </div>
+                </article>
+
+            </aside>
+        </main>
+        
+        <script src="storage.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+
+    <footer>
+        <div id="foot-text">
+            <h4 class="judul-foot">© 2021, Digital Bookshelf Apps by Isma'il M Falih.</h4>
+        </div>
+    </footer>
+</html>
